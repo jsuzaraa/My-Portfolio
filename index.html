@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jen Suzara Andres — Graphic Designer &amp; Video Editor</title>
+<meta name="description" content="Portfolio of Jen Suzara Andres, graphic designer and video editor. Brand identity, motion reels, social campaigns and certifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom playhead cursor (decorative, disabled on touch) -->
+<div class="playhead-cursor" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo-mark" aria-label="Jen Suzara Andres — home">
+      <span class="logo-frame">JSA</span>
+      <span class="logo-text">Jen Suzara&nbsp;Andres</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#work" data-nav>Work</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#certificates" data-nav>Certificates</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-small header-cta">Let's talk</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Signature element: scroll-linked video timeline scrubber -->
+  <div class="scrubber" role="navigation" aria-label="Section timeline">
+    <div class="scrubber-track">
+      <div class="scrubber-fill" id="scrubberFill"></div>
+      <div class="scrubber-playhead" id="scrubberPlayhead"></div>
+      <button class="scrub-tick" data-target="#top" data-time="00:00:00:00" style="--pos:0%">
+        <span class="tick-label">Intro</span>
+      </button>
+      <button class="scrub-tick" data-target="#about" data-time="00:00:12:04" style="--pos:14%">
+        <span class="tick-label">About</span>
+      </button>
+      <button class="scrub-tick" data-target="#skills" data-time="00:00:27:11" style="--pos:31%">
+        <span class="tick-label">Skills</span>
+      </button>
+      <button class="scrub-tick" data-target="#work" data-time="00:00:44:02" style="--pos:50%">
+        <span class="tick-label">Work</span>
+      </button>
+      <button class="scrub-tick" data-target="#certificates" data-time="00:01:03:19" style="--pos:70%">
+        <span class="tick-label">Certs</span>
+      </button>
+      <button class="scrub-tick" data-target="#contact" data-time="00:01:22:00" style="--pos:90%">
+        <span class="tick-label">Contact</span>
+      </button>
+    </div>
+    <div class="scrubber-readout" id="scrubberReadout">00:00:00:00</div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="rec-dot" aria-hidden="true"></span>Graphic Designer &amp; Video Editor</p>
+        <h1 class="hero-title">
+          I cut noise<br>
+          into <span class="highlight">story</span>,<br>
+          and pixels into <span class="highlight">place</span>.
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm Jen! I'm a creative and detail-oriented recent graduate with skills in 
+          graphic design, multimedia, web design, and digital content creation. I enjoy 
+          turning ideas into visually engaging and functional digital experiences. I'm 
+          curious, eager to learn, and always open to exploring new tools and technologies 
+          to improve my skills and bring creative ideas to life.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="#certificates" class="btn btn-ghost">See certifications</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>#</dt><dd>Projects delivered</dd></div>
+          <div><dt>#&nbsp;#</dt><dd>Behind the timeline</dd></div>
+          <div><dt>9</dt><dd>Certifications</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="player">
+          <div class="player-frame">
+            <div class="player-gradient" id="playerGradient"></div>
+            <div class="player-grain" aria-hidden="true"></div>
+            <button class="player-play" aria-label="This is a preview, not a real video">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none"><path d="M8 5v14l11-7L8 5z" fill="currentColor"/></svg>
+            </button>
+            <span class="player-badge">kineme_2026.mov</span>
+          </div>
+          <div class="player-bar">
+            <span class="player-time">00:00:14:02</span>
+            <div class="player-progress"><span style="width:38%"></span></div>
+            <span class="player-time">00:00:36:00</span>
+          </div>
+        </div>
+        <div class="hero-swatch" aria-hidden="true">
+          <span style="--c:var(--coral)"></span>
+          <span style="--c:var(--gold)"></span>
+          <span style="--c:var(--ivory)"></span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>BRAND IDENTITY</span><span>•</span><span>VIDEO EDITING</span><span>•</span>
+        <span>SOCIAL CAMPAIGNS</span><span>•</span><span>GRAPHICS DESIGN</span><span>•</span>
+        <span>ART DIRECTION</span><span>•</span><span>REEL EDITING</span><span>•</span>
+        <span>BRAND IDENTITY</span><span>•</span><span>VIDEO EDITING</span><span>•</span>
+        <span>SOCIAL CAMPAIGNS</span><span>•</span><span>GRAPHICS DESIGN</span><span>•</span>
+        <span>ART DIRECTION</span><span>•</span><span>REEL EDITING</span><span>•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-head" data-reveal>
+      <span class="section-time">00:00:12:04</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-portrait" data-reveal>
+        <div class="portrait-frame">
+          <img src="images/my pic.JPEG" alt="My Photo">
+        </div>
+        <div class="portrait-tag">
+          <span class="tag-dot"></span> Currently open for freelance
+        </div>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p class="about-lead">
+          Hi, I'm Jen! I'm a recent graduate who is curious, adaptable, and open 
+          to exploring different opportunities. I enjoy learning new things, working 
+          with technology, and finding practical ways to solve problems.
+        </p>
+        <p>
+          Throughout my academic and personal experiences, I've developed skills in 
+          areas such as graphic design, multimedia, web development, documentation, and 
+          basic technical troubleshooting. I've also worked on different projects that 
+          required attention to detail, organization, creativity, teamwork, and the ability 
+          to learn new tools and processes.
+        </p>
+        <p>
+          While I have areas that I'm already familiar with, I'm not limiting myself to one 
+          career path. I'm open to roles where I can apply my existing skills while learning 
+          new ones, whether in technical support, data entry, administrative work, digital content, or 
+          other technology-related and creative roles.
+        </p>
+        <p>
+          I'm a fast learner who is willing to step outside my comfort zone, take on new challenges, and 
+          continuously improve. I'm looking for opportunities where I can contribute, gain meaningful experience, and 
+          grow both personally and professionally.
+        </p>
+        <ul class="about-facts">
+          <li><span>Location</span>Philippines · Open to opportunities worldwide</li>
+          <li><span>Interest</span>Technical Support, digital work, design & technology</li>
+          <li><span>Strengths</span>Fast learner · Adaptable · Detail-oriented</li>
+          <li><span>Availability</span>Open to entry-level &amp; remote opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills-section" id="skills">
+  <div class="section-header">
+    <span class="section-number">03</span>
+    <h2>Skills</h2>
+    <p>
+      A growing set of creative, technical, and professional skills
+      developed through academic projects, personal work, and continuous learning.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+
+    <!-- CREATIVE -->
+    <div class="skill-category">
+      <h3>CREATIVE</h3>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Graphic Design</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="75"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Video Editing</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="70"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Photo Editing</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="70"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Digital Content Creation</span>
+          <span>Developing</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="60"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TECHNICAL -->
+    <div class="skill-category">
+      <h3>TECHNICAL</h3>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>HTML & CSS</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="70"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Basic JavaScript</span>
+          <span>Developing</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="55"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Technical Troubleshooting</span>
+          <span>Developing</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="60"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Microsoft Office</span>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-level="75"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PROFESSIONAL -->
+    <div class="skill-category">
+      <h3>PROFESSIONAL</h3>
+
+      <div class="skill-tags">
+        <span>Problem Solving</span>
+        <span>Attention to Detail</span>
+        <span>Adaptability</span>
+        <span>Organization</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+        <span>Time Management</span>
+        <span>Fast Learning</span>
+      </div>
+    </div>
+
+
+    <!-- TOOLKIT -->
+    <div class="skill-category">
+      <h3>TOOLKIT</h3>
+
+      <div class="toolkit">
+        <span>Canva</span>
+        <span>Photoshop</span>
+        <span>Illustrator</span>
+        <span>Premiere Pro</span>
+        <span>CapCut</span>
+        <span>Figma</span>
+        <span>VS Code</span>
+        <span>Microsoft Office</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ============ WORK ============ -->
+  <section class="work" id="work">
+    <div class="section-head" data-reveal>
+      <span class="section-time">00:00:44:02</span>
+      <h2>My Works</h2>
+      <p class="section-desc">A mix of signals</p>
+    </div>
+
+    <div class="work-filters" data-reveal role="tablist" aria-label="Filter work by category">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="design">Graphic Design</button>
+      <button class="filter-btn" data-filter="Video">Video</button>
+      <button class="filter-btn" data-filter="social">Ewan</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/1.png"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A collection of promotional graphics and visual materials
+      created for events, announcements, and digital content.
+    </p>
+  </div>
+      </article>
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/3.png"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A collection of promotional graphics and visual materials
+      created for events, announcements, and digital content.
+    </p>
+  </div>
+      </article>
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/6.png"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A collection of promotional graphics and visual materials
+      created for events, announcements, and digital content.
+    </p>
+  </div>
+      </article>
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/2.jpg"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A seasonal promotional poster designed for a Chinese New Year 
+      campaign, featuring festive typography, cultural visual accents, and 
+      key travel offer details.
+    </p>
+  </div>
+      </article>
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/USA.png"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A comprehensive marketing flyer created for a travel agency, combining 
+      bold promotional typography, structured daily tour schedules, photo previews, and 
+      booking details for a West Coast USA package.
+    </p>
+  </div>
+      </article>
+
+      <article class="work-card" data-reveal data-category="design">
+  <div class="work-thumb work-thumb--1">
+    <img src="images/1.jpg"
+         alt="Promotional graphic design">
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">GRAPHIC DESIGN</span>
+
+    <h3>Promotional Material</h3>
+
+    <p>
+      A custom brand identity artwork designed for a capstone USB flash drive, featuring 
+      a navigation-inspired compass rose, custom typography, and minimal vector illustrations 
+      highlighting Batangas cultural and natural landmarks.
+    </p>
+  </div>
+      </article>
+
+  <!-- ============ Video! ============ -->
+
+      <article class="work-card work-card--video" data-reveal data-category="Video">
+  <div class="work-thumb work-thumb--video">
+    <video width="100%" height="100%" style="object-fit: cover; display: block;" controls controlsList="nodownload">
+      <source src="images/1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">VIDEO</span>
+
+    <h3>Video Project</h3>
+
+    <p>
+      A promotional video project showcasing real-time, on-the-spot editing, produced entirely from original camera footage and hands-on editing.
+    </p>
+  </div>
+      </article>
+
+            <article class="work-card work-card--video" data-reveal data-category="Video">
+  <div class="work-thumb work-thumb--video">
+    <video width="100%" height="100%" style="object-fit: contain; display: block;" controls controlsList="nodownload" allowfullscreen>
+      <source src="images/2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="work-info">
+    <span class="work-tag">VIDEO</span>
+
+    <h3>Video Project</h3>
+
+    <p>
+      A promotional video showcase featuring a mix of AI-generated visual content and original post-production video edits.
+    </p>
+  </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATES ============ -->
+  <section class="certificates" id="certificates">
+    <div class="section-head" data-reveal>
+      <span class="section-time">00:01:03:19</span>
+      <h2>Certifications</h2>
+      <p class="section-desc">Credentials from courses and programs I've completed.</p>
+    </div>
+
+    <div class="cert-strip" data-reveal>
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>National Certificate III in Visual Graphic Design</h3>
+          <p class="cert-issuer">TESDA: Technical Education and Skills Development Authority</p>
+          <p class="cert-year">2025</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>CCNA: Introduction to Networks</h3>
+          <p class="cert-issuer">CISCO Networking Academy</p>
+          <p class="cert-year">2025</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>DevNet Associate</h3>
+          <p class="cert-issuer">CISCO Networking Academy</p>
+          <p class="cert-year">2025</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>CCNA: Switching, Routing, and Wireless Essentials</h3>
+          <p class="cert-issuer">CISCO Networking Academy</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>IT Essentials</h3>
+          <p class="cert-issuer">CISCO Networking Academy</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Technical Support Fundamentals</h3>
+          <p class="cert-issuer">Google</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Operating Systems and You: Becoming a Power User</h3>
+          <p class="cert-issuer">Google</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>The Bits and Bytes of Computer Networking</h3>
+          <p class="cert-issuer">Google</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-perf" aria-hidden="true"></div>
+        <div class="cert-body">
+          <svg class="cert-seal" viewBox="0 0 48 48" width="34" height="34" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/><path d="M17 24l5 5 9-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>System Administration and IT Infrastructure Services</h3>
+          <p class="cert-issuer">Google</p>
+          <p class="cert-year">2026</p>
+        </div>
+        <div class="cert-perf" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="section-head" data-reveal>
+      <span class="section-time">00:01:14:08</span>
+      <h2>How a project runs</h2>
+    </div>
+    <ol class="process-list">
+      <li data-reveal>
+        <span class="process-time">01</span>
+        <h3>Understand</h3>
+        <p>I start by understanding the project, its goals, requirements, and what is expected. 
+          I make sure I have a clear idea of what needs to be done before getting started.</p>
+      </li>
+      <li data-reveal>
+        <span class="process-time">02</span>
+        <h3>Plan</h3>
+        <p>I organize the tasks, identify the tools and resources I need, and create a simple plan to keep the project structured and on track.</p>
+      </li>
+      <li data-reveal>
+        <span class="process-time">03</span>
+        <h3>Learn & Build</h3>
+        <p>I work on the project while learning any tools, processes, or skills that I may not be familiar with. I'm comfortable asking questions, researching solutions, and adapting when needed.</p>
+      </li>
+      <li data-reveal>
+        <span class="process-time">04</span>
+        <h3>Review</h3>
+        <p>I carefully review my work, check for errors, and make improvements based on the requirements or feedback.</p>
+      </li>
+      <li data-reveal>
+        <span class="process-time">05</span>
+        <h3>Deliver</h3>
+        <p>Once everything is completed and reviewed, I prepare the final output and make sure it is organized, functional, and ready to use.</p>
+      </li>
+      <li data-reveal>
+        <span class="process-time">06</span>
+        <h3>Import</h3>
+        <p>I take feedback as an opportunity to learn. Every project is a chance to improve my skills, discover better ways of working, and take on new challenges.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-head" data-reveal>
+        <span class="section-time">00:01:22:00</span>
+        <h2>Let's make something</h2>
+        <p class="section-desc">Have a project in mind? Tell me about it — I read every message myself.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm" data-reveal novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required rows="5" placeholder="What are you working on?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <span>Send message</span>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side" data-reveal>
+          <a class="contact-email" href="mailto:jensuzara.andres05@gmail.com">jensuzara.andres05@gmail.com</a>
+          <ul class="contact-links">
+            <li><a href="https://www.facebook.com/suzaraaa">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/jen-suzara-andres-043802412">LinkedIn</a></li>
+          </ul>
+          <p class="contact-note">Currently booking projects for next month onward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> JS Andres. Designed &amp; edited by hand.</span>
+    <a href="#top" class="back-to-top">Back to intro ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
