@@ -227,7 +227,7 @@ if (skillSection) {
 
       // No backend connected yet — wire this up to your form
       // service or mail API of choice (Formspree, Resend, etc).
-      formNote.textContent = `Thanks, ${name.split(" ")[0]} — your message is ready to send. Connect a form service to deliver it.`;
+      formNote.textContent = `Thanks, ${name.split(" ")[0]} — kindly message me directly on my email or LinkedIn.`;
       contactForm.reset();
     });
   }
