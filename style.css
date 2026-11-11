@@ -1016,6 +1016,44 @@ input, textarea { font: inherit; color: inherit; }
   color: var(--muted-2);
 }
 
+/*============= PATCH: Verified badge=================== */ 
+.cert-card {
+  position: relative;
+}
+
+.cert-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px 4px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: #16a34a;
+  background: rgba(22, 163, 74, 0.12);
+  border: 1px solid rgba(22, 163, 74, 0.35);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cert-badge:hover {
+  background: rgba(22, 163, 74, 0.22);
+  transform: translateY(-1px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .cert-badge {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.12);
+    border-color: rgba(74, 222, 128, 0.35);
+  }
+}
+
 /* ============ PROCESS ============ */
 .process { padding: clamp(4rem, 9vw, 7rem) 0; }
 .process-list {

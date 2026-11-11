@@ -1,5 +1,5 @@
 /* ============================================================
-   MAYA CRUZ — PORTFOLIO
+   Jen Suzara Andres — PORTFOLIO
    Vanilla JS, no dependencies.
    ============================================================ */
 
